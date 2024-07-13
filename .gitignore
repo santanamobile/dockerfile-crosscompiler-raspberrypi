@@ -1,0 +1,3 @@
+.vscode/
+sonar-project.properties
+run-sonarscanner.sh
