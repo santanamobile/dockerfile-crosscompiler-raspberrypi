@@ -72,7 +72,6 @@ For 64 bit architecture and these boards, enter the command below.
 - Raspberry Pi Compute Module 4S
 
 ```bash
-cd linux
 KERNEL=kernel8
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 ```
@@ -80,7 +79,6 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 - Raspberry Pi 5
 
 ```bash
-cd linux
 KERNEL=kernel_2712
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2712_defconfig
 ```
@@ -93,7 +91,6 @@ For 32 bit architecture and these boards, enter the command below
 - Raspberry Pi Zero W
 
 ```bash
-cd linux
 KERNEL=kernel
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcmrpi_defconfig
 ```
@@ -106,7 +103,6 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcmrpi_defconfig
 - Raspberry Pi Zero 2 W
 
 ```bash
-cd linux
 KERNEL=kernel7
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
 ```
@@ -117,7 +113,6 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
 - Raspberry Pi Compute Module 4S
 
 ```bash
-cd linux
 KERNEL=kernel7l
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2711_defconfig
 ```
