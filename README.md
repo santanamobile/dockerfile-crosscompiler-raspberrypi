@@ -1,6 +1,6 @@
 # Cross-Compiling Environment for Raspberry Pi
 
-This repository contains a Dockerfile for setting up a cross-compiling environment for the Raspberry Pi on an x86 machine.
+This repository contains a Dockerfile for setting up a cross-compiling environment for the Raspberry Pi on an x86/64 machine.
 
 This work is based on [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/computers/linux_kernel.html#cross-compile-the-kernel) about kernel compiling.
 
