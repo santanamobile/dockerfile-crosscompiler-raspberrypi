@@ -18,7 +18,7 @@ Before start, you must have the Docker runtime installed on your machine. You ca
 This is the command to build the Docker image:
 
 ```bash
-docker build --no-cache --build-arg "HOST_UID=$(id -u)" --build-arg "HOST_GID=$(id -g)" --rm -f "Dockerfile" -t compiler-raspberry-pi:v1.0 .
+docker build --no-cache --build-arg "HOST_UID=$(id -u)" --build-arg "HOST_GID=$(id -g)" --rm -f "Dockerfile" -t crosscompiler-raspberrypi:v1.0 .
 ```
 
 Check the result image:
@@ -27,7 +27,7 @@ Check the result image:
 $ docker image ls
 
 REPOSITORY               TAG       IMAGE ID       CREATED          SIZE
-compiler-raspberry-pi    v1.0      85c6737ca559   25 seconds ago   917MB
+crosscompiler-raspberrypi    v1.0      85c6737ca559   25 seconds ago   917MB
 ```
 
 ## How to use
@@ -52,7 +52,7 @@ cd linux
 Run the container
 
 ```bash
-docker run -it --rm -v $(pwd):/project compiler-raspberry-pi:v1.0
+docker run -it --rm -v $(pwd):/project crosscompiler-raspberrypi:v1.0
 ```
 
 ## Creating default configuration
